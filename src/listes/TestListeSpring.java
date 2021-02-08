@@ -19,9 +19,9 @@ public class TestListeSpring {
 
 		int max = 0;
 		
-		for (int i = 0; i < ville.length(); i++ ) {
-			if (ville.length() > max) {
-				max = ville.length();
+		for (int i = 0; i < ville.size(); i++ ) {
+			if (ville.size() > max) {
+				max = ville.size();
 			}
 		}
 

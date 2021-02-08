@@ -1,4 +1,4 @@
-package recensement;
+package recensementIntro;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -35,6 +35,7 @@ public class Application {
 		int total34 = 0;
 		int popMin = Integer.MAX_VALUE;
 		Ville villePopMin = null;
+		Ville top10Max = null;
 
 		for (Ville v : listeville) {
 			if (v.getNomCommune().equals("Montpellier")) {
@@ -46,9 +47,22 @@ public class Application {
 					popMin = v.getPopulationTotale();
 					villePopMin = v;
 				}
+				
 			}
 
 		}
+		
+		
+//		List<Ville> selection = new ArrayList<>();
+//		for (int i=0; i<villes.size(); i++) {
+//			
+//			Ville ville ) villes.get(i);
+//			if (ville.getCodeDepartement().equals(codeDeptrecherche)) {
+//				selection.add(ville);
+//				
+//			}
+//
+//		}
 
 		System.out.println("population du dept 34 : " + total34);
 		System.out.println("Ville la moins peuplée : " + villePopMin);
